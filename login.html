@@ -67,7 +67,7 @@
             const storedPlateNumber = localStorage.getItem('plateNumber');
             if (storedPlateNumber) {
                 // Redirect to the home page if a plate number is found
-                window.location.href = '../home.html';
+                window.location.href = 'start.html';
             }
         });
 
@@ -75,7 +75,7 @@
             const plateNumber = document.querySelector('.plate-input').value;
             if (plateNumber) {
                 localStorage.setItem('plateNumber', plateNumber);
-                window.location.href = '../home.html'; // Redirect to the home page
+                window.location.href = 'start.html'; // Redirect to the home page
             }
         }
     </script>
